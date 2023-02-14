@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relacion imagen-palabra</title>
+    <style>
+        .contenedorImagenes{
+            display: grid;
+            width: 100%;
+            height: 500px;
+            grid-template-columns: 1fr 1fr;  /*Dividimos el contenedor de manera veritcal, con los 1fr indiacamos la cantidad a dividir*/
+            grid-template-rows: 1fr 1fr; /*Dividimos de forma horizontal*/
+            background: papayawhip;
+        }
+        div{
+            background: blueviolet;
+            width: 100px;
+            height: 100px;
+        }
+        .espacioAudio{
+            background: green;
+            width: 1000px;
+        }
+        .cuadroAudio{
+            background: red;
+            width: 200px;
+            height: 50px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <section class="contenedorImagenes">
+        <div>Cuadro 1</div>
+        <div>Cuadro 2</div>
+        <div>Cuadro 3</div>
+        <div>Cuadro 4</div>
+    </section>
+    <div class="espacioAudio">
+        <div class="cuadroAudio">Audio</div>
+    </div>
+    
+</body>
+</html>

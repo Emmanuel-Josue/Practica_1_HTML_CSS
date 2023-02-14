@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diverso</title>
+    <style>
+        body{
+            margin: 0px;
+            background: Violet;
+        }
+        div.baner{
+            background: MediumPurple;
+            height: 100px;
+        }
+        .contenedorUno{
+            /* position: relative; */
+            background: yellow;
+            width: 500px;
+            height: 100px;
+            
+            
+        }
+        .autor{
+            /* position: absolute; */
+            width: 100px;
+            height: 20px;
+           
+            background: Orange;
+            /* right: 50px; Le indicamos que se mueva a la derecha. */
+            
+        }
+        .contenedorDos{
+            /* display: flex; */
+            width: 500px;
+            height: 100px;
+            background: MediumPurple;
+            /* justify-content: center; */
+        }
+        .titulo{
+            /* position: absolute; */
+            width: 250px;
+            height: 50px;
+            background: green;
+        }
+        .menu{
+            display: grid;
+            background: red;
+            grid-template-columns: 1fr 1fr 1fr 1fr;  /*Dividimos el contenedor de manera veritcal, con los 1fr indiacamos la cantidad a dividir*/
+
+        }
+        .item{
+            background: Orchid;
+            height: 20px;
+            
+        }  
+
+    </style>
+</head>
+<body>
+    <div class="baner"> 
+        <div class="contenedorUno">
+            <!-- <div class="contenedorDos">
+                <h1 class="titulo">DIVERSO</h1>
+            </div> -->
+            <div class="titulo">Diverso
+                <div>Otro titulo</div>
+            </div>
+            <div class="autor">Emmanuel.</div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="item">Menu</div>        
+        <div class="item">Proyectos</div>
+        <div class="item">Diverso</div>
+        <div class="item">Contactos</div>
+    </div>
+</body>
+</html>
